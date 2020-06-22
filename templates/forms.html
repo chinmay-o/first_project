@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+  {% block body_block %}
+
+    <div class="container" style="margin-top: 40px;">
+
+          <h1>Fill the forms</h1>
+
+          <form style="margin-top: 40px;" method="POST">
+
+            {{ form.as_p }}
+            {% csrf_token %}
+            <input type="submit" class="btn btn-primary" value="Submit">
+
+          </form>
+          {{ thank_you }}
+
+    {% endblock %}

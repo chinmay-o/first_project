@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+
+  {% block body_block %}
+
+    <div class="users">
+
+      {% if users %}
+
+        <h1>Your Users List</h1>
+
+        <table>
+
+          <thead>
+              <th>No.</th>
+              <th>Name</th>
+              <th>Email</th>
+          </thead>
+
+          {% for user in users %}
+
+            <tr>
+              <td>{{ forloop.counter }}</td>
+              <td>{{ user.first_name }} {{ user.last_name }}</td>
+              <td>{{ user.email }}</td>
+            </tr>
+
+          {% endfor %}
+
+        </table>
+
+      {% else %}
+
+        <p>Users list not found</p>
+
+      {% endif %}
+
+    </div>
+  {% endblock %}

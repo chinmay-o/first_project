@@ -1,0 +1,30 @@
+
+table, th, td{
+
+  border: 2px solid black;
+}
+
+.indexes{
+
+  font-size: 30px;
+}
+
+ol{
+
+  margin: 4px;
+}
+
+ul{
+
+  margin-bottom: 10px;
+}
+
+a:link{
+
+  text-decoration: none;
+}
+
+a:visited{
+
+  color: #007bff;
+}
